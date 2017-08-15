@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="ExampleApp">
 <head>
-  <title>Datetime input UI element for AngularJS</title>
+  <title>Skygate</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="dist/datetime-inputs.min.css">
   <meta name="viewport" content="width=500,user-scalable=0">
@@ -16,16 +16,12 @@
       color: #333;
       font-family: sans-serif;
     }
-  </style>
-  
-  
-  
+   </style>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    
 </head>
 <body>
         <div class="vertical-middle">
@@ -34,9 +30,6 @@
                 <div class="panel-heading">
                     <h2 class="panel-title">Contact Form</h2>
                 </div>
-
-    
-    
     <div ng-controller="MainCtrl">
         <form  ng-submit="submit" name="contactform" method="post" action="" class="form-horizontal" role="form">
               <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
@@ -85,19 +78,13 @@
                                 </button>
                             </div>
                         </div>
-            
-            
+                
         </form>
   
-  </div>
-            </div></div></div>  
-  
-  
-  
+  </div></div></div></div>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js" charset="utf-8"></script>
   <script src="dist/datetime-inputs.min.js"></script>
-
   <script>
     angular.module('ExampleApp', ['g1b.datetime-inputs']).
       controller('MainCtrl', function ($scope) {
@@ -106,8 +93,6 @@
           console.log('datetime', datetime);
         };
       });
-      
-      
-  </script>
+ </script>
 </body>
 </html>
